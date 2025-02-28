@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components Banner</title>
+    <script src="https://file-size.github.io/element.js"></script>
+    <script>
+        document.head.append(Object.assign(document.createElement('script'), {
+            src: `./element${location.href.includes("127") ? "" : ".min"}.js?txt4=sneak_preview`
+        }));
+        document.head.append(Object.assign(document.createElement('script'), {
+            src: `./element-edit${location.href.includes("127") ? "" : ".min"}.js`,
+            onload: (evt) => {
+                console.log(evt.target.src, "loaded");
+                document.querySelectorAll("web-components-banner").forEach(banner => {
+                    console.log(banner.id, "editable");
+                });
+            }
+        }));
+    </script>
+    <style>
+        body {
+            background: beige;
+            font: 12px arial;
+            --width: 1000px;
+        }
+
+        header {
+            margin: 0 auto;
+            width: var(--width);
+        }
+
+        web-components-banner {
+            margin: 2em 0;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <web-components-banner id="lightDOM" txt3="When is lightDOM parsed?"></web-components-banner>
+        <style>
+            header {
+                --wcb-txt4color: red;
+            }
+
+            singlefile::part(svg) {
+                /* overrules --wcb-bannerscolor */
+                --txt1outline: blue;
+                --txt1color: green;
+                --txt4fontsize: 10px;
+                background: red;
+            }
+        </style>
+        <web-components-banner id="singlefile" txt1="Single File" txt2="Web Components" txt3x="1" txt3anchor="start"
+            txt13="txt3" txt5x="93" txt5anchor="end" txt5="just load & use"></web-components-banner>
+
+        <!-- <web-components-banner id="Q" txt3="How to create a &lt;pie-chart> in 2025?"></web-components-banner> -->
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <script>
+            if (location.href.includes(".io")) {
+                document.write(`<file-size gz src="element.js"></file-size>`);
+            } 
+        </script>
+    </footer>
+    <hr>
+    <style>
+        svg {
+            --txt4stroke: black;
+            --txt4fill: yellow;
+        }
+    </style>
+
+</body>
+
+</html>

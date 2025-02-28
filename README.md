@@ -1,2 +1,1 @@
-# web-components-banner.github.io
-&lt;web-components-banner>
+# https://web-components-banner.github.io

@@ -15,7 +15,7 @@
             onload: (evt) => {
                 console.log(evt.target.src, "loaded");
                 document.querySelectorAll("web-components-banner").forEach(banner => {
-                    console.log(banner.id, "editable");
+                    // console.log(banner.id, "editable");
                 });
             }
         }));
@@ -55,8 +55,8 @@
                 background: red;
             }
         </style>
-        <web-components-banner id="singlefile" txt1="Single File" txt2="Web Components" txt3x="1" txt3anchor="start"
-            txt13="txt3" txt5x="93" txt5anchor="end" txt5="just load & use"></web-components-banner>
+        <web-components-banner id="singlefile" txt1="Single File" txt2="Web Components" txt3anchor="start:1" txt5anchor="end:93"
+            txt5="just load & use"></web-components-banner>
 
         <!-- <web-components-banner id="Q" txt3="How to create a &lt;pie-chart> in 2025?"></web-components-banner> -->
     </header>

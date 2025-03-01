@@ -11,7 +11,7 @@
             src: `./element${location.href.includes("127") ? "" : ".min"}.js?txt4=sneak_preview`
         }));
         document.head.append(Object.assign(document.createElement('script'), {
-            src: `./element-edit${location.href.includes("127") ? "" : ".min"}.js`,
+            // src: `./element-edit${location.href.includes("127") ? "" : ".min"}.js`,
             onload: (evt) => {
                 console.log(evt.target.src, "loaded");
                 document.querySelectorAll("web-components-banner").forEach(banner => {
@@ -30,6 +30,7 @@
         header {
             margin: 0 auto;
             width: var(--width);
+            max-width: 100dvw;
         }
 
         web-components-banner {
@@ -61,7 +62,7 @@
         <!-- <web-components-banner id="Q" txt3="How to create a &lt;pie-chart> in 2025?"></web-components-banner> -->
     </header>
     <main>
-
+        <site-banner></site-banner>
     </main>
     <footer>
         <script>

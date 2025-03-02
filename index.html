@@ -8,7 +8,9 @@
     <script src="https://file-size.github.io/element.js"></script>
     <script>
         document.head.append(Object.assign(document.createElement('script'), {
-            src: `./element${location.href.includes("127") ? "" : ".min"}.js?text1=Web_Components&text4=Sneak_Preview`
+            // type: "module",
+            defer: true,
+            src: `./element${location.href.includes("127") ? "" : ".min"}.js?text2=XX&text4=Sneak_Preview&rod=90`
         }));
         document.head.append(Object.assign(document.createElement('script'), {
             // src: `./element-edit${location.href.includes("127") ? "" : ".min"}.js`,
@@ -42,21 +44,21 @@
 
 <body>
     <header>
+        <web-components-banner from="url,script" text2="OO" text2size="5"></web-components-banner>
         <web-components-banner></web-components-banner>
-        <web-components-banner id="noattrs"></web-components-banner>
         <web-components-banner from="url"></web-components-banner>
         <web-components-banner from="script"></web-components-banner>
-        <web-components-banner from="urlscript"></web-components-banner>
-        <web-components-banner id="excludedemo" exclude="text1,text2,text3,text4,text5" text6="The_truth_is_out_there:2"></web-components-banner>
+        <web-components-banner id="excludedemo" exclude="text1,text2,text3,text4,text5"
+            text6="The_truth_is_out_there:2"></web-components-banner>
         <script>
-            excludedemo.onmouseenter = evt => {
-                console.log(evt.type);
-                excludedemo.text6 = "Hello Web Component:2";
-            }
-            excludedemo.onmouseleave = evt => {
-                console.log(evt.type);
-                excludedemo.text6 = "The_truth_is_out_there:2";
-            }
+            // excludedemo.onmouseenter = evt => {
+            //     console.log(evt.type);
+            //     excludedemo.text6 = "Hello Web Component:2";
+            // }
+            // excludedemo.onmouseleave = evt => {
+            //     console.log(evt.type);
+            //     excludedemo.text6 = "The_truth_is_out_there:2";
+            // }
         </script>
         <style>
             header {

@@ -48,6 +48,16 @@
         <web-components-banner from="script"></web-components-banner>
         <web-components-banner from="urlscript"></web-components-banner>
         <web-components-banner id="excludedemo" exclude="text1,text2,text3,text4,text5" text6="The_truth_is_out_there:2"></web-components-banner>
+        <script>
+            excludedemo.onmouseenter = evt => {
+                console.log(evt.type);
+                excludedemo.text6 = "Hello Web Component:2";
+            }
+            excludedemo.onmouseleave = evt => {
+                console.log(evt.type);
+                excludedemo.text6 = "The_truth_is_out_there:2";
+            }
+        </script>
         <style>
             header {
                 --wcb-txt4color: red;

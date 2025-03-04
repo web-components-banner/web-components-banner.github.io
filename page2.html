@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components Banner</title>
+    <script>
+        document.head.append(Object.assign(document.createElement('script'), {
+            src: `./element${location.href.includes("127") ? "" : ".min"}.js?text4=Sneak_Preview&text4y=60&rod=90`
+        }));
+    </script>
+    <link rel="stylesheet" href="web-components-banner.css">
+</head>
+
+<body>
+
+    <web-components-banner from="url,script"></web-components-banner>
+    <web-components-banner from="url,script" text2="Banners" basefill="green" basestroke="black:.5" rod="0"></web-components-banner>
+
+    <script> 
+        if (window.self !== window.top) {
+            console.log(location.search);
+            console.log(document.currentScript.src);
+            console.log(window.self.location.pathname,"IN", window.top.location.pathname);
+        }
+    </script>
+
+    <section>
+        <h1>Page #2</h1>
+        A page with a default &lt;web-component-banner>
+    </section>
+    <div>21</div>
+    <div>21</div>
+    <div>21</div>
+    <div>21</div>
+    <div>21</div>
+    <div>21</div>
+    <div>&nbsp;22</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+body {
+  background-color: #f0f0f0;
+  width: 1000px;
+  margin: 0 auto;
+  font: 21px arial;
+}
+web-components-banner {
+  display: block;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+iframe {
+  width: 100%;
+  height: 200px;
+  border: 20px solid red;
+  border-radius: 5px;
+  background: pink;
+  display: inline-block;
+}
+section {
+}

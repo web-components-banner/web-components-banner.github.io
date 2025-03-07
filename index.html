@@ -9,7 +9,7 @@
     <script>
         document.head.append(Object.assign(document.createElement('script'), {
             // type: "module",
-            src: `./element${location.href.includes("127") ? "" : ".min"}.js?text2=<script>_parameters&text4=Sneak_Preview&rod=90`
+            src: `./element${location.href.includes("127") ? "" : ".min"}.js?from=script&text1=Banner from&text2=<script>_parameters&text3=injected in your HTML XXXX&text4=Sneak_Preview&text5=&rod=0&in=body:10` 
         }));
         document.head.append(Object.assign(document.createElement('script'), {
             // src: `./element-edit${location.href.includes("127") ? "" : ".min"}.js`,
@@ -108,16 +108,17 @@
     properties setter
 
     <header>
-        <!-- <web-components-banner id="parts" text1="text1" text2="text2" text3="text3" text4="text4" text5="text5" text5anchor="start:5" text6="text6_text6_text6_text6:3.4:1.9"  rod="90"></web-components-banner>
-        <web-components-banner id="texts" text1="text1" text2="text2" text3="text3" text4="text4" text5="text5" text5anchor="start:5" text6="text6_text6_text6_text6:3.4:1.9"  rod="90"></web-components-banner>
+        <web-components-banner id="parts" text1="text1" text2="text2" text3="text3" text4="text4" text5="text5"
+            text5anchor="start:5" text6="text6_text6_text6_text6:3.4:1.9" rod="90"></web-components-banner>
+        <!-- <web-components-banner id="texts" text1="text1" text2="text2" text3="text3" text4="text4" text5="text5" text5anchor="start:5" text6="text6_text6_text6_text6:3.4:1.9"  rod="90"></web-components-banner>
         <prev-next type="Prev"></prev-next>
-        <prev-next></prev-next>
+        <prev-next></prev-next>-->
         
-        <web-components-banner id="b1"></web-components-banner>
-        <web-components-banner from="url"></web-components-banner>
-        <web-components-banner from="script"></web-components-banner> -->
-        <web-components-banner id="w1" tag="" loxgox="0" widtxh="36" text1="Buy American" no="text2,text3,text4,text5"
-            text6="Don't_buy_American:3.7:2.3"></web-components-banner>
+        <web-components-banner id="blank"></web-components-banner>
+        <web-components-banner id="url" from="url"></web-components-banner>
+        <web-components-banner id="script" from="script"></web-components-banner>
+        <web-components-banner id="buy" width="175" text1="Buy American" no="text2,text3,text5,tag" logoy=5 text4="Or Not!:21" text4fill=darkgreen text4anchor="end:72.5" text6="Find local producers:3.5:2"></web-components-banner>
+            text6="Find local producers:3.5:2"></web-components-banner>
         <!-- <web-components-banner id="excludedemo" logox="0" width="60" no="text1,text2,text3,text4,text5"
                     text6="The_truth_is_out_there:3.4:2"></web-components-banner> -->
 
